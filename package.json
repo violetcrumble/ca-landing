@@ -1,0 +1,45 @@
+{
+  "name": "clatyon-homes-consumer-affairs-landing-page",
+  "description": "Clayton Homes Consumer Affairs Landing Page",
+  "version": "1.0.0",
+  "author": "PubWeb",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^3.5.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-15": "^1.0.5",
+    "es6-promise": "^4.2.4",
+    "gatsby": "^1.9.236",
+    "gatsby-link": "^1.6.39",
+    "gatsby-plugin-google-analytics": "^1.0.28",
+    "gatsby-plugin-react-helmet": "^2.0.8",
+    "gatsby-plugin-sass": "^1.0.23",
+    "isomorphic-fetch": "^2.2.1",
+    "jest": "^22.0.3",
+    "jsx-chai": "^4.0.0",
+    "react-addons-test-utils": "^15.6.0",
+    "react-helmet": "^5.2.0",
+    "react-modal": "^3.3.2",
+    "react-waypoint": "^8.0.1"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build --prefix-paths",
+    "build-local": "gatsby build",
+    "develop": "gatsby develop",
+    "test": "jest",
+    "test-coverage": "jest --coverage"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src/"
+    ]
+  }
+}

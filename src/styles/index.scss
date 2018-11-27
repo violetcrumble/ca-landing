@@ -1,0 +1,462 @@
+@import url("https://use.typekit.net/wdo7qrw.css");
+@import url("animate.css");
+
+html {
+  font-family: "acumin-pro", Helvetica, Arial, sans-serif;
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+$brand-color-01: #1377bc;
+$brand-color-01-mid: #0976bc;
+$brand-color-01-light: #40b0f7;
+
+$brand-color-02: #a1ce66;
+
+$brand-color-03: #96d3ce;
+$brand-color-03-transparent: rgba(150, 211, 206, 0.92);
+$brand-color-03-mid: #90d2cd;
+$brand-color-03-bright: #4ad1c7;
+
+$text-color-01: #324460;
+$text-color-02: #05282f;
+$text-color-03: #758491;
+$text-color-04: #939393;
+$text-color-05: #797979;
+$text-color-06: #d6d6d6;
+
+$pale-bg: #f2f2f2;
+
+header {
+  color: $text-color-02;
+  display: flex;
+  font-size: 1.7rem;
+  justify-content: space-between;
+  z-index: 1000;
+
+  .clayton-logo {
+    width: 127px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    .hat {
+      fill: $brand-color-02;
+    }
+    .letters {
+      fill: $brand-color-01;
+    }
+  }
+  p {
+    margin-right: 1.4rem;
+    margin-top: 2.4rem;
+  }
+  a {
+    text-decoration: none;
+  }
+  span {
+    color: $brand-color-01-light;
+  }
+}
+
+h2 {
+  animation: fadeIn 1s;
+  color: $text-color-01;
+  font-size: 5.5rem;
+  font-weight: 900;
+  line-height: 105%;
+  padding-top: 4.0rem;
+  text-align: center;
+  text-shadow:
+          0 0 10px #fff,
+          0 0 15px #fff,
+          0 0 20px #fff,
+          0 0 70px #fff;
+  z-index: 500;
+}
+
+.hero-image {
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 2.0rem;
+  padding-top: 1px;
+}
+
+.form-container {
+  animation: pulse 1s;
+  animation-delay: 500ms;
+  margin: 0 auto;
+  max-width: 300px;
+  width: 72%;
+
+  .form-wrapper {
+    position: relative;
+  }
+  fieldset {
+    border: 0;
+  }
+  .disabled-overlay {
+    background-color: rgba(0, 0, 0, .5);
+
+    height: 100%;
+    left: 0;
+    margin: -15px 0 0 0;
+    padding: 0 0 15px 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+
+    .overlay-text {
+      color: #fff;
+      font-weight: bold;
+      padding-top: 100px;
+    }
+  }
+
+  h3 {
+    background-color: $brand-color-03-transparent;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 100%;
+    margin: 0;
+    padding: 1.4rem 0;
+    text-align: center;
+  }
+  .form-content {
+    background-color: #fff;
+    margin-top: 0;
+    padding-top: 1px;
+  }
+  p {
+    color: $text-color-01;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 110%;
+    margin: 1rem auto;
+    text-align: center;
+    width: 85%;
+  }
+  form {
+    margin: 0 auto;
+    width: 85%;
+  }
+  .form-name, .form-email {
+    width: 100%;
+  }
+  .form-invalid-feedback {
+    color: #f00;
+    display: block;
+    font-size: 1rem;
+    line-height: 110%;
+    margin-bottom: 10px;
+    opacity: 0;
+
+    &.is-invalid {
+      opacity: 1;
+    }
+  }
+  input {
+    border: solid 1px $text-color-06;
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    padding: 0.7rem;
+    width: 100%;
+  }
+  .form-row {
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .form-zip {
+    width: 28%;
+  }
+  .form-phone {
+    width: 68%;
+  }
+  label {
+    color: $text-color-04;
+  }
+  button, .submit-btn {
+    background: $brand-color-01-light;
+    background: linear-gradient(to bottom, $brand-color-01-light 0%,$brand-color-01-mid 100%);
+    border-radius: 0.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-bottom: 1.4rem;
+    padding: 1.2rem 0;
+    text-decoration: none;
+    width: 100%;
+  }
+  .required-text {
+    color: $text-color-04;
+    font-size: 1.0rem;
+    font-weight: normal;
+    margin: 2px 0;
+    padding: 0;
+    text-align: right;
+    width: 100%;
+  }
+  .thank-you {
+    font-size: 1.3rem;
+    margin: 1rem auto;
+    padding-bottom: 1rem;
+    text-align: center;
+    width: 90%;
+  }
+}
+.consumer-affairs-logo {
+  text-align: center;
+
+  img {
+    margin: 3.8rem auto 0 auto;
+    max-width: 128px;
+    width: 25%;
+  }
+}
+.why-clayton {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+
+  h1 {
+    font-size: 3.4rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  .why-clayton-blurbs {
+    margin-top: 5.0rem;
+  }
+  .why-clayton-blurb {
+    margin-bottom: 4.0em;
+    opacity: 0;
+  }
+  .blurb-0, .blurb-2 {
+    animation: flipInX 300ms;
+    opacity: 1;
+  }
+  .blurb-1, .blurb-3 {
+    //if blurb id is odd, have the effect happen a little slower
+    animation: flipInX 1000ms;
+    opacity: 1;
+  }
+  .piggy,
+  .lightbulb,
+  .floorplan,
+  .speech-bubble {
+    fill: #fff;
+    margin-top: 6px;
+    stroke: #fff;
+    width: 65px;
+  }
+  .floorplan {
+    fill: none;
+    stroke-width: 3;
+  }
+  .speech-bubble {
+    fill: $brand-color-03;
+    stroke-width: 3;
+  }
+  .why-clayton-circle {
+    background-color: $brand-color-03;
+    border-radius: 50%;
+    height: 77px;
+    margin: 0 auto;
+    padding: 10px;
+    width: 77px;
+  }
+  h1 {
+    color: $brand-color-02;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  h4 {
+    color: $brand-color-03;
+    font-size: 1.8rem;
+  }
+  p {
+    color: $text-color-01;
+  }
+  .disclaimer {
+    font-size: 0.9rem;
+    font-style: italic;
+    margin: 6.0rem auto;
+  }
+}
+.learn {
+  background-color: $pale-bg;
+  padding-top: 2.8rem;
+
+  .learn-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2%;
+  }
+  h6 {
+    color: $brand-color-01-mid;
+    font-size: 3.5rem;
+    margin: 0 auto 2.8rem auto;
+    text-align: center;
+  }
+  .learn-article {
+    background-color: #fff;
+    margin-bottom: 10px;
+    max-width: 248px;
+    text-align: center;
+    text-decoration: none;
+    width: 48%;
+
+    img {
+      width: 100%;
+    }
+    h4 {
+      color: $text-color-05;
+      font-size: 1.4rem;
+      height: 5.0rem;
+      line-height: 120%;
+    }
+    p {
+      color: $brand-color-03-bright;
+      font-weight: 900;
+    }
+  }
+}
+.ReactModalPortal {
+  iframe {
+    border: 0;
+  }
+  .nav-hider {
+    background-color: #fff;
+    height: 67px;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+  button {
+    background: $brand-color-01-light;
+    background: linear-gradient(to bottom, $brand-color-01-light 0%,$brand-color-01-mid 100%);
+    border-radius: 0.4rem;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 5px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    z-index: 20;
+  }
+}
+footer {
+  background-color: $brand-color-03-mid;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 1rem 3rem 10rem 3rem;
+  text-align: center;
+
+  div {
+    display: inline;
+  }
+  div:not(:last-child) {
+    border-right: solid 2px #fff;
+    margin-right: 1rem;
+    padding-right: 1rem;
+  }
+  a {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+.learn {
+  .learn-articles {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 80%;
+  }
+  header {
+    .clayton-logo {
+      margin-top: 15px;
+    }
+  }
+  h2 {
+    padding-top: 0;
+  }
+  .form-container {
+    width: 37%;
+    margin: 0 0 0 61%;
+  }
+  .consumer-affairs-logo {
+    margin-left: 1rem;
+    position: relative;
+    top: -20rem;
+    width: 16%;
+
+    img {
+      width: 100%;
+    }
+  }
+  .why-clayton {
+    margin-top: -10em;
+    width: 90%;
+
+    .why-clayton-blurbs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .why-clayton-blurb {
+      width: 45%;
+    }
+  }
+  .learn-articles {
+    .learn-article {
+      cursor: pointer;
+    }
+  }
+}
+@media screen and (min-width: 1400px) {
+  header {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .hero-image {
+    background-color: $pale-bg;
+  }
+  .why-clayton {
+    max-width: 1100px;
+  }
+  .learn {
+    .learn-articles {
+      margin: 0 auto;
+      max-width: 1100px;
+      text-align: center;
+
+      .learn-article {
+        width: 25%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1500px) {
+  .consumer-affairs-logo {
+    margin-left: 15rem;
+  }
+}
